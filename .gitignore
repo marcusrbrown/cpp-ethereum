@@ -69,7 +69,12 @@ project.pbxproj
 bin/
 
 # Visual Studio Code
-browse.VC.db
+[.?]browse.VC.db*
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/c_cpp_properties.json
 
 doc/html
 *.autosave
