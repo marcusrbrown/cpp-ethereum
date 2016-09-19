@@ -91,15 +91,46 @@ case $(uname -s) in
         # Check for Homebrew install and abort if it is not installed.
         brew -v > /dev/null 2>&1 || { echo >&2 "ERROR - cpp-ethereum requires a Homebrew install.  See http://brew.sh."; exit 1; }
 
+        # In August 2016, the 'carthage' package added a requirement for
+        # a full Xcode 7.3 install, not just command-line build tools,
+        # because it needs Swift 2.2.  This requirement is a complete
+        # non-starter for TravisCI, where we have no ability or desire
+        # to do that installation.  We aren't using 'carthage' ourselves,
+        # so we just pin it here prior to 'brew update'.
+        # https://github.com/Homebrew/homebrew-core/issues/3996
+        brew pin carthage
+
+        # A change was committed to 'brew' on 4th September 2016 which
+        # broke various packages, including 'gnupg' and 'nvm.  We can
+        # work around that issue by pinning the Formula for the time being.
+        # The rolling release pattern strikes again.  Live projects
+        # around the world are the test environment.
+        brew pin gnupg
+        brew pin nvm
+
+        # Update Homebrew formulas and then upgrade any packages which
+        # we have installed using these updated formulas.  This step is
+        # required even within TravisCI, because the Homebrew formulas
+        # are a constant moving target, and we always need to be chasing
+        # those moving targets.  This is a fundamental design decision
+        # made in 'rolling release' package management systems, and one
+        # which makes our macOS builds fundamentally unstable and
+        # unreliable.  We just had to try to react fast when anything
+        # breaks.
+        #
+        # See https://github.com/ethereum/cpp-ethereum/issues/3089
         brew update
         brew upgrade
 
-        # Bonus fun - TravisCI image for Yosemite includes a gmp version which doesn't
-        # like being updated, so we need to uninstall it first.
+        # Bonus fun - TravisCI image for Yosemite includes a gmp version
+        # which doesn't like being updated, so we need to uninstall it
+        # first, so that the installation step below is a clean install.
         brew uninstall gmp
-        
+
+        # And finally install all the external dependencies.
         brew install \
             boost \
+            ccache \
             cmake \
             cryptopp \
             gmp \
@@ -126,7 +157,7 @@ case $(uname -s) in
 #------------------------------------------------------------------------------
 # Linux
 #------------------------------------------------------------------------------
-        
+
     Linux)
 
 #------------------------------------------------------------------------------
@@ -145,7 +176,7 @@ case $(uname -s) in
                 automake \
                 gcc \
                 libtool \
-                boost \ 
+                boost \
                 cmake \
                 crypto++ \
                 git \
@@ -306,7 +337,7 @@ case $(uname -s) in
                 # Install "normal packages"
                 # See https://fedoraproject.org/wiki/Package_management_system.
                 dnf install \
-                    autoconf \ 
+                    autoconf \
                     automake \
                     boost-devel \
                     cmake \
@@ -316,7 +347,7 @@ case $(uname -s) in
                     gcc-c++ \
                     git \
                     gmp-devel \
-                    leveldb-devel \ 
+                    leveldb-devel \
                     libtool \
                     mesa-dri-drivers \
                     miniupnpc-devel \
@@ -366,12 +397,14 @@ case $(uname -s) in
 # See https://github.com/ethereum/webthree-umbrella/issues/228.
 #------------------------------------------------------------------------------
 
-            Ubuntu)
-                #Ubuntu
+            Ubuntu|LinuxMint)
+                #Ubuntu or LinuxMint
                 case $(lsb_release -cs) in
-                    trusty)
-                        #trusty
+                    trusty|rosa|rafaela|rebecca|qiana)
+                        #trusty or compatible LinuxMint distributions
                         echo "Installing cpp-ethereum dependencies on Ubuntu Trusty Tahr (14.04)."
+                        echo "deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-3.9 main" \
+                        | sudo tee -a /etc/apt/sources.list > /dev/null
                         ;;
                     utopic)
                         #utopic
@@ -385,9 +418,11 @@ case $(uname -s) in
                         #wily
                         echo "Installing cpp-ethereum dependencies on Ubuntu Wily Werewolf (15.10)."
                         ;;
-                    xenial)
+                    xenial|sarah)
                         #xenial
                         echo "Installing cpp-ethereum dependencies on Ubuntu Xenial Xerus (16.04)."
+                        echo "deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-3.9 main" \
+                        | sudo tee -a /etc/apt/sources.list > /dev/null
                         ;;
                     yakkety)
                         #yakkety
@@ -435,9 +470,13 @@ case $(uname -s) in
                 #
                 # See https://github.com/ethereum/webthree-umbrella/issues/103
 
+                if [ TRAVIS ]; then
+                    # On Travis CI llvm package conficts with the new to be installed.
+                    sudo apt-get -y remove llvm
+                fi
                 sudo add-apt-repository -y ppa:ethereum/ethereum
                 sudo apt-get -y update
-                sudo apt-get -y install \
+                sudo apt-get install -y --no-install-recommends --allow-unauthenticated \
                     build-essential \
                     cmake \
                     git \
@@ -450,6 +489,7 @@ case $(uname -s) in
                     libmicrohttpd-dev \
                     libminiupnpc-dev \
                     libz-dev \
+                    llvm-3.9-dev \
                     mesa-common-dev \
                     ocl-icd-libopencl1 \
                     opencl-headers

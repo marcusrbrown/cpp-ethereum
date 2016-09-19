@@ -42,7 +42,7 @@ include(EthDependencies)
 include(EthUtils)
 include(EthOptions)
 
-configure_project(CPUID CURL ETHASHCL EVMJIT FATDB GUI MINIUPNPC OLYMPIC ROCKSDB PARANOID SOLIDITY TESTS VMTRACE)
+configure_project(CPUID CURL ETHASHCL EVMJIT FATDB MINIUPNPC ROCKSDB PARANOID TESTS VMTRACE)
 
 add_subdirectory(eth)
 add_subdirectory(libdevcore)
@@ -79,9 +79,7 @@ if (TOOLS)
 endif()
 
 if (TESTS)
-    add_subdirectory(test/libethereum/test)
-    add_subdirectory(test/libweb3core/test)
-    add_subdirectory(test/webthree/test)
+	add_subdirectory(test)
 endif()
 
 # TODO - split out json_spirit, libscrypt and sec256k1
