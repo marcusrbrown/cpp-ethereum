@@ -1,5 +1,7 @@
 # cpp-ethereum - Ethereum C++ client (Ethereum Classic Blockchain)
 
+[![Join the chat at https://gitter.im/ethereumproject/cpp-ethereum](https://badges.gitter.im/ethereumproject/cpp-ethereum.svg)](https://gitter.im/ethereumproject/cpp-ethereum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This repository contains cpp-ethereum, the [Ethereum Classic](https://ethereumclassic.github.io/) C++ client. It is a fork
 of [cpp-ethereum](http://cpp-ethereum.org/), the [Ethereum](http://ethereum.org) C++ client. This repository is maintained by
 the Ethereum Classic development team. At some point Ethereum and Ethereum Classic may diverge into separate networks. In any
