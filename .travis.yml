@@ -52,10 +52,11 @@ matrix:
         # OS X Mavericks (10.9)
         # https://en.wikipedia.org/wiki/OS_X_Mavericks
         #
-        - os: osx
-          osx_image: beta-xcode6.2
-          env:
-              - ZIP_SUFFIX=osx-mavericks
+        # TODO - Disabled osx-mavericks because it times out during the build.
+        #- os: osx
+        #  osx_image: beta-xcode6.2
+        #  env:
+        #      - ZIP_SUFFIX=osx-mavericks
 
         # OS X Yosemite (10.10)
         # https://en.wikipedia.org/wiki/OS_X_Yosemite
