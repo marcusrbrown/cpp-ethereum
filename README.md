@@ -1,6 +1,8 @@
 # cpp-ethereum - Ethereum C++ client (Ethereum Classic Blockchain)
 
 [![Join the chat at https://gitter.im/ethereumproject/cpp-ethereum](https://badges.gitter.im/ethereumproject/cpp-ethereum.svg)](https://gitter.im/ethereumproject/cpp-ethereum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Travis CI Build Status](https://travis-ci.org/ethereumproject/cpp-ethereum.svg?branch=develop)](https://travis-ci.org/ethereumproject/cpp-ethereum/branches)
+[![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/vslpgeb3mwya8bh0/branch/develop?svg=true)](https://ci.appveyor.com/project/igetgames/cpp-ethereum-lrwsa/branch/develop)
 
 This repository contains cpp-ethereum, the [Ethereum Classic](https://ethereumclassic.github.io/) C++ client. It is a fork
 of [cpp-ethereum](http://cpp-ethereum.org/), the [Ethereum](http://ethereum.org) C++ client. This repository is maintained by
@@ -31,11 +33,6 @@ has a Quick Start section.
 
 Come and find us on the Ethereum Classic [Slack](http://ethereumclassic.herokuapp.com/) in the [#development](https://ethereumclassic.slack.com/messages/development/)
 channel if you have any questions or suggestions.
-
-                 | Status
------------------|-----------
-Ubuntu and macOS | [![Build Status](https://travis-ci.org/ethereumproject/cpp-ethereum.svg?branch=develop)](https://travis-ci.org/ethereumproject/cpp-ethereum/branches)
-Windows          | [![Build Status](https://ci.appveyor.com/api/projects/status/6b8fl9av4vuf602a/branch/develop?svg=true)](https://ci.appveyor.com/project/igetgames/cpp-ethereum)
 
 ## Contributing
 
