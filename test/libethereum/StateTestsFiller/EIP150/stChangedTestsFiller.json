@@ -4,7 +4,7 @@
             "currentCoinbase" : "2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
             "currentDifficulty" : "45678256",
             "currentGasLimit" : "1000000",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentTimestamp" : "1",
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
@@ -57,7 +57,7 @@
     "callcallcallcode_001_OOGMAfter_1": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -67,32 +67,32 @@
 	   "1000000000000000000000000000000000000000" : {
                 "storage" : {
 			"0x00" : "0x01",
-			"0x01" : "0x00",			
-			"0x02" : "0x00",			
+			"0x01" : "0x00",
+			"0x02" : "0x00",
 			"0x03" : "0x00"
                 }
             },
             "1000000000000000000000000000000000000001" : {
                 "storage" : {
 			"0x00" : "0x00",
-			"0x01" : "0x00",			
-			"0x02" : "0x00",			
+			"0x01" : "0x00",
+			"0x02" : "0x00",
 			"0x03" : "0x00"
                 }
             },
             "1000000000000000000000000000000000000002" : {
                 "storage" : {
 			"0x00" : "0x00",
-			"0x01" : "0x00",			
-			"0x02" : "0x00",			
+			"0x01" : "0x00",
+			"0x02" : "0x00",
 			"0x03" : "0x00"
                 }
             },
 	    "1000000000000000000000000000000000000003" : {
                 "storage" : {
 			"0x00" : "0x00",
-			"0x01" : "0x00",			
-			"0x02" : "0x00",			
+			"0x01" : "0x00",
+			"0x02" : "0x00",
 			"0x03" : "0x00"
                 }
             },
@@ -103,7 +103,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -148,11 +148,11 @@
             "data" : ""
         }
     },
-   
+
     "callcallcodecall_010_OOGMAfter_1": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -161,7 +161,7 @@
         "expect" : {
 	    "1000000000000000000000000000000000000000" : {
                 "storage" : {
-			"0x00" : "0x01",			
+			"0x00" : "0x01",
 			"0x01" : "0x00",
 			"0x02" : "0x00",
 			"0x03" : "0x00"
@@ -189,7 +189,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -238,7 +238,7 @@
     "callcodecallcall_100_OOGMAfter_1": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -248,7 +248,7 @@
             "1000000000000000000000000000000000000000" : {
                 "storage" : {
 			"0x00" : "0x01",
-			"0x01" : "0x00",			
+			"0x01" : "0x00",
 			"0x02" : "0x00",
 			"0x03" : "0x00"
                 }
@@ -278,7 +278,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -328,7 +328,7 @@
     "callcodecallcallcode_101_OOGMAfter_2": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -338,7 +338,7 @@
             "1000000000000000000000000000000000000000" : {
                 "storage" : {
 			"0x00" : "0x01",
-			"0x01" : "0x00",			
+			"0x01" : "0x00",
 			"0x02" : "0x00",
 			"0x03" : "0x00"
                 }
@@ -346,14 +346,14 @@
             "1000000000000000000000000000000000000001" : {
                 "storage" : {
 			"0x00" : "0x00",
-			"0x01" : "0x00",			
+			"0x01" : "0x00",
 			"0x02" : "0x00",
 			"0x03" : "0x00"
                 }
             },
             "1000000000000000000000000000000000000002" : {
                 "storage" : {
-			"0x01" : "0x00",			
+			"0x01" : "0x00",
 			"0x02" : "0x00",
 			"0x03" : "0x00"
                 }
@@ -370,7 +370,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -420,7 +420,7 @@
     "callcodecallcodecall_110_OOGMAfter_1": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -430,7 +430,7 @@
             "1000000000000000000000000000000000000000" : {
                 "storage" : {
 			"0x00" : "0x01",
-			"0x01" : "0x00",			
+			"0x01" : "0x00",
 			"0x02" : "0x00",
 			"0x03" : "0x00"
                 }
@@ -461,7 +461,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -510,7 +510,7 @@
     "callcodecallcodecallcode_111_OOGMAfter_1": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -520,13 +520,13 @@
             "1000000000000000000000000000000000000000" : {
                 "storage" : {
 			"0x00" : "0x00",
-			"0x01" : "0x00",			
+			"0x01" : "0x00",
 			"0x02" : "0x00"
                 }
             },
             "1000000000000000000000000000000000000001" : {
                 "storage" : {
-			"0x01" : "0x00",			
+			"0x01" : "0x00",
 			"0x02" : "0x00"
                 }
             },
@@ -550,7 +550,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -599,7 +599,7 @@
     "callcodecallcodecallcode_111_OOGMAfter_2": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -609,13 +609,13 @@
             "1000000000000000000000000000000000000000" : {
                 "storage" : {
 			"0x00" : "0x01",
-			"0x01" : "0x00",			
+			"0x01" : "0x00",
 			"0x02" : "0x00"
                 }
             },
             "1000000000000000000000000000000000000001" : {
                 "storage" : {
-			"0x01" : "0x00",			
+			"0x01" : "0x00",
 			"0x02" : "0x00"
                 }
             },
@@ -639,7 +639,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -688,7 +688,7 @@
     "callcallcallcode_001_OOGMAfter_2": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -698,7 +698,7 @@
 	   "1000000000000000000000000000000000000000" : {
                 "storage" : {
 			"0x00" : "0x01",
-			"0x01" : "0x00",		
+			"0x01" : "0x00",
 			"0x02" : "0x00"
                 }
             },
@@ -730,7 +730,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -779,7 +779,7 @@
     "callcallcodecall_010_OOGMAfter_2": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -789,7 +789,7 @@
 	    "1000000000000000000000000000000000000000" : {
                 "storage" : {
 			"0x00" : "0x01",
-			"0x01" : "0x00",			
+			"0x01" : "0x00",
 			"0x02" : "0x00",
 			"0x03" : "0x00"
                 }
@@ -819,7 +819,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -868,7 +868,7 @@
     "callcallcodecallcode_011_OOGMAfter_1": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -908,7 +908,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -957,7 +957,7 @@
     "callcodecallcall_100_OOGMAfter_2": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -997,7 +997,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -1046,7 +1046,7 @@
     "callcodecallcallcode_101_OOGMAfter_3": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -1056,7 +1056,7 @@
             "1000000000000000000000000000000000000000" : {
                 "storage" : {
 			"0x00" : "0x01",
-			"0x01" : "0x00",			
+			"0x01" : "0x00",
 			"0x02" : "0x00",
 			"0x03" : "0x00"
                 }
@@ -1086,7 +1086,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -1135,7 +1135,7 @@
     "callcodecallcodecall_110_OOGMAfter_2": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -1175,7 +1175,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -1224,7 +1224,7 @@
     "callcodecallcodecallcode_111_OOGMAfter_3": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -1264,7 +1264,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -1313,7 +1313,7 @@
     "callcall_00_OOGE_1": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -1323,11 +1323,11 @@
             "1000000000000000000000000000000000000002" : {
                 "storage" : {
 			"0x02" : "0x01",
-			"0x05" : "0x02"	
+			"0x05" : "0x02"
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -1369,7 +1369,7 @@
     "callcall_00_OOGE_2": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -1379,11 +1379,11 @@
             "1000000000000000000000000000000000000002" : {
                 "storage" : {
 			"0x02" : "0x01",
-			"0x05" : "0x02"	
+			"0x05" : "0x02"
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -1425,7 +1425,7 @@
    "callcall_00_OOGE_valueTransfer": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -1484,7 +1484,7 @@
     "callcallcallcode_001_OOGMAfter_3": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -1518,7 +1518,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -1567,7 +1567,7 @@
     "callcallcall_000_OOGMAfter": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -1601,7 +1601,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -1650,7 +1650,7 @@
     "callcallcodecall_010_OOGMAfter_3": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -1687,7 +1687,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -1735,7 +1735,7 @@
     "callcallcodecallcode_011_OOGMAfter_2": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -1770,7 +1770,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -1819,7 +1819,7 @@
     "callcodecallcall_100_OOGMAfter_3": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -1852,7 +1852,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -1901,7 +1901,7 @@
     "callcodecallcallcode_101_OOGMAfter_1": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -1933,7 +1933,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -1982,7 +1982,7 @@
     "callcodecallcodecall_110_OOGMAfter_3": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -2019,7 +2019,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -2068,7 +2068,7 @@
     "callcodecallcodecallcode_111_OOGMAfter": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "30000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
@@ -2091,7 +2091,7 @@
                 }
             }
 	},
-        "pre" : {	     
+        "pre" : {
             "1000000000000000000000000000000000000000" : {
                 "balance" : "1000000000000000000",
                 "nonce" : "0",
@@ -2143,11 +2143,11 @@
             "currentDifficulty" : "45678256",
 	    "currentGasLimit" : "2^63-1",
             "currentGasLimit" : "0x7fffffffffffffff",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentTimestamp" : 1,
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
-        "expect" : { 
+        "expect" : {
             "bbbf5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "storage" : {
                     "0x00" : "0x0401",
@@ -2200,7 +2200,7 @@
             "currentDifficulty" : "45678256",
 	    "currentGasLimit" : "2^63-1",
             "currentGasLimit" : "0x7fffffffffffffff",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentTimestamp" : 1,
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
@@ -2259,11 +2259,11 @@
             "currentDifficulty" : "45678256",
 	    "currentGasLimit" : "2^63-1",
             "currentGasLimit" : "0x7fffffffffffffff",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentTimestamp" : 1,
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
- 	"expect" : {   
+ 	"expect" : {
             "bbbf5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                  "storage" : {
                     "0x00" : "0x0401",
@@ -2313,7 +2313,7 @@
     "createInitFail_OOGduringInit": {
         "env" : {
             "previousHash" : "5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6",
-            "currentNumber" : "2463000",
+            "currentNumber" : "2500000",
             "currentGasLimit" : "100000000",
             "currentDifficulty" : "256",
             "currentTimestamp" : 1,
