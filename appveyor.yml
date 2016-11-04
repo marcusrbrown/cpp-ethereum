@@ -78,10 +78,17 @@ deploy:
     on:
         branch: release
 
-# Disable slightly annoying AppVeyorBot.  The comments it adds onto Github issues are
-# redundant with the "Checks Passed/Failure" detail which is already on the issues.
 notifications:
+    # Disable slightly annoying AppVeyorBot.  The comments it adds onto Github issues are
+    # redundant with the "Checks Passed/Failure" detail which is already on the issues.
     - provider: GitHubPullRequest
       on_build_success: false
       on_build_failure: false
       on_build_status_changed: false
+    # Gitter integration.
+    - provider: Webhook
+      url: https://webhooks.gitter.im/e/2742d0e8364e4ebda5f6
+      method: POST
+      on_build_success: true
+      on_build_failure: true
+      on_build_status_changed: true

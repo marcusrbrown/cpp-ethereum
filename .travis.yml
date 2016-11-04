@@ -147,3 +147,12 @@ deploy:
       on:
           repo: ethereum/cpp-ethereum
           branch: release
+
+notifications:
+    # Gitter integration.
+    webhooks:
+        urls:
+            - https://webhooks.gitter.im/e/33a12abf94433f07bfed
+        on_success: change
+        on_failure: always
+        on_start: never
