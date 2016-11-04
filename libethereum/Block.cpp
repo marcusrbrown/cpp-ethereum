@@ -128,7 +128,7 @@ void Block::resetCurrent(u256 const& _timestamp)
 	m_precommit = m_state;
 	m_committedToSeal = false;
 
-	performIrregularModifications();
+	// performIrregularModifications();
 }
 
 SealEngineFace* Block::sealEngine() const
