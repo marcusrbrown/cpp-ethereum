@@ -51,8 +51,7 @@ matrix:
 
         # OS X Mavericks (10.9)
         # https://en.wikipedia.org/wiki/OS_X_Mavericks
-        #
-        # TODO - Disabled osx-mavericks because it times out during the build.
+        # - disabled because it takes too long with non-binary homebrew
         #- os: osx
         #  osx_image: beta-xcode6.2
         #  env:
@@ -60,12 +59,12 @@ matrix:
 
         # OS X Yosemite (10.10)
         # https://en.wikipedia.org/wiki/OS_X_Yosemite
-        #
-        - os: osx
-          osx_image: xcode7.1
-          env:
-              - TRAVIS_TESTS=Off
-              - ZIP_SUFFIX=osx-yosemite
+        # - disabled because it takes too long with non-binary homebrew
+        #- os: osx
+        #  osx_image: xcode7.1
+        #  env:
+        #      - TRAVIS_TESTS=Off
+        #      - ZIP_SUFFIX=osx-yosemite
 
         # OS X El Capitan (10.11)
         # https://en.wikipedia.org/wiki/OS_X_El_Capitan
